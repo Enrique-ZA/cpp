@@ -3,6 +3,8 @@
 // Website: https://shiffman.net/
 // Github: https://github.com/CodingTrain/
 // Youtube: https://www.youtube.com/user/shiffman
+// additional functions work with openframeworks (example ofRandom())
+// see openframeworks documentation
 
 //--------------------------------------------------------------
 
