@@ -214,6 +214,7 @@ class NeuralNetwork {
 		HOWeights = nn.HOWeights.copy();
 		Hbias = nn.Hbias.copy();
 		Obias = nn.Obias.copy();
+		return nn;
 	}
 
 	NeuralNetwork(int input, int hidden, int output) {
