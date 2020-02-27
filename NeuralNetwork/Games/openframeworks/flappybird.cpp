@@ -2,6 +2,7 @@
 // in openframeworks
 // using Toy Neural Network
 // this is the ofApp.cpp file
+// for c++ by https://github.com/Enrique-ZA
 
 #include <stdlib.h>
 #include "ofApp.h"
