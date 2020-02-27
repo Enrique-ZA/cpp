@@ -19,6 +19,7 @@ class Matrix {
 	Matrix(int rows, int cols) {
 		this->rows = rows;
 		this->cols = cols;
+		values.resize(rows);
 		for (int i = 0; i < rows; i++) {
 			values[i].resize(cols);
 		}
@@ -27,6 +28,7 @@ class Matrix {
 	Matrix() {
 		rows = 1;
 		cols = 1;
+		values.resize(rows);
 		for (int i = 0; i < rows; i++) {
 			values[i].resize(cols);
 		}
@@ -44,6 +46,7 @@ class Matrix {
 
 	vector<vector<string>> stringify(Matrix a) {
 		vector<vector<string>> result;
+		result.resize(a.rows);
 		for (int i = 0; i < a.rows; i++) {
 			result[i].resize(a.cols);
 		}
@@ -106,7 +109,8 @@ class Matrix {
 
 	vector<float> toArray() {
 		int n = rows + cols;
-		vector<float> arr(n,0);
+		vector<float> arr;
+		arr.resize(n);
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
 				arr[i] = values[i][j];
@@ -215,6 +219,9 @@ class NeuralNetwork {
 		Hbias = nn.Hbias.copy();
 		Obias = nn.Obias.copy();
 		return nn;
+	}
+
+	NeuralNetwork() {
 	}
 
 	NeuralNetwork(int input, int hidden, int output) {
