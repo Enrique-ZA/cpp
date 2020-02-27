@@ -461,7 +461,6 @@ void Agent::think() {
 		inputs[1] = ofMap(closest.top, 0, height, 0, 1);
 		inputs[2] = ofMap(closest.bottom, 0, height, 0, 1);
 		inputs[3] = ofMap(closest.x, 0, width, 0, 1);
-		//inputs[4] = ofMap(velocity, -(velocity/3), (velocity*3), 0, 1);
 		inputs[4] = velocity / 10;
 	} else {
 		inputs[0] = ofRandom(0, 1);
