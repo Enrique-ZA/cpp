@@ -1,4 +1,5 @@
 // Toy Neural Network rewritten for c++
+// c++ by https://github.com/Enrique-ZA
 // Author: Daniel Shifmann
 // Website: https://shiffman.net/
 // Github: https://github.com/CodingTrain/
