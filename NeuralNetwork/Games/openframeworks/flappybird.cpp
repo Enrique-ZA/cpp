@@ -417,7 +417,7 @@ class Pipe {
 	public:
 
 	float spacing = 75;
-	float top = ofRandom(height / 6, height / 3);
+	float top = ofRandom(height / 8, (height / 2)*1.5);
 	float bottom = height - (top + spacing);
 	float x = width;
 	float w = 80;
