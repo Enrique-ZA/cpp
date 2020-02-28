@@ -558,6 +558,12 @@ Agent selectCandidate() {
 	int index = 0;
 	float r = ofRandom(1);
 	while (r > 0) {
+		if (index >= total) {
+			index = total - 1;
+		}
+		if (index < 0) {
+			index = 0;
+		}
 		r -= savedAgents[index].fitness;
 		index++;
 	}
